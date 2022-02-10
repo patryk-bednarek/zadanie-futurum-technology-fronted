@@ -1,0 +1,48 @@
+<h3>Create campaign</h3>>
+<form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+
+    <div class="form-group">
+        <label>Product name</label>
+        <input type="text" class="form-control" id="productName"
+            ngModel  name="productName" required>
+    </div>
+
+    <div class="form-group">
+        <label>Keyword</label>
+        <input type="text" class="form-control" id="keyword"
+            ngModel  name="keyword" required>
+    </div>
+
+    <div class="form-group">
+        <label>Price</label>
+        <input type="text" class="form-control" id="price"
+            ngModel name="price" required>
+    </div>
+
+    <div class="form-group">
+        <label>Fund</label>
+        <input type="text" class="form-control" id="funds"
+            ngModel name="funds" required>
+    </div>
+
+    <div class="form-group">
+        <label>Status</label>
+        <input type="text" class="form-control" id="status"
+            ngModel name="status" required>
+    </div>
+
+    <div class="form-group">
+        <label>Town</label>
+        <input type="text" class="form-control" id="town"
+            ngModel name="town" required>
+    </div> 
+
+    <div class="form-group">
+        <label>Radius</label>
+        <input type="text" class="form-control" id="radius"
+            ngModel name="radius" required>
+    </div>  
+
+    <button [disabled]="addForm.invalid" class="btn btn-success" type="submit">Submit</button>
+
+</form>
